@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { format } from 'date-fns';
 import { api } from '../../services/api';
 import { Container } from './styles';
 
@@ -40,7 +41,7 @@ export function TransactionsTable() {
                   {transaction.amount}
                 </td>
                 <td>{transaction.category}</td>
-                <td>{transaction.createdAt}</td>
+                <td>{format(transaction.createdAt, 'dd/MM/yyyy HH:mm:ss')}</td>
               </tr>
             ))}
         </tbody>

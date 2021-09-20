@@ -15,15 +15,15 @@ createServer({
           amount: 400,
           type: 'withdraw',
           category: 'Food',
-          createdAt: new Date(),
+          createdAt: Date.now(),
         },
         {
-          id: 1,
+          id: 2,
           title: 'Desenvolvimento website',
           amount: 10000,
           type: 'deposit',
           category: 'Development',
-          createdAt: new Date(),
+          createdAt: Date.now(),
         },
       ];
     });
